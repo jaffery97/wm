@@ -34,6 +34,24 @@
         </div>
 
     </div>
+    
+    
+<img src="img/help%20icon.png" class="open-button" onclick="openForm()">
+
+<div class="form-popup" id="myForm">
+    
+  <form action="/action_page.php" class="form-container"><br>
+      <p>Please let us know if there are any issues</p><br>
+    <label for="Messages"><b>Messages</b></label><br>
+      <textarea placeholder="Your Messages" name="email" required></textarea>
+      <br>
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" placeholder="Your email" name="psw" required>
+      <br>
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
 
 <!--
     <div class="section">
@@ -46,6 +64,18 @@
     <footer>
     COPYRIGHT @ DHNY 2020
     </footer>
+    
+    
+    
+    <script>
+function openForm() {
+  document.getElementById("myForm").style.cssText = "display: block;transition-duration: 1s;";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 
 </body>
 

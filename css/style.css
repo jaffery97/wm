@@ -1,114 +1,205 @@
  * {
-            margin: 0;
-            padding: 0;
-            outline: 0;
-            font-family: sans-serif;
-        }
-        
-        
+     margin: 0;
+     padding: 0;
+     outline: 0;
+     font-family: sans-serif;
+ }
 
 
-        .container {
-            height: 70vh;
-            display: flex;
-            flex-direction: row;
-        }
 
-        .filter {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            opacity: .3;
-        }
 
-        .info {
-            text-align: center;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            z-index: 5;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            
-        }
+ .container {
+     height: 70vh;
+     display: flex;
+     flex-direction: row;
+ }
 
-        .info a {
-            margin: 10px;
-            padding: 10px 30px;
-            color: #fff;
-            font-size: 16px;
-            text-transform: uppercase;
-            border: 1px solid #fff;
-            transition: .4s;
-            text-decoration: none;
-            background-color: black;
-        }
+ .filter {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     opacity: .3;
+ }
 
-        .info a:hover {
-            background-color: #fff;
-            color: #212121;
-        }
+ .info {
+     text-align: center;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     z-index: 5;
+     transform: translate(-50%, -50%);
+     color: #fff;
 
-        .right {
-            position: relative;
-            width: 50%;
-            background-image: url(../img/parent.jpg);
-            background-size: cover;
-            background-position: center;
-            transition: .4s;
-            border-right: 4px solid #212121;
-        }
+ }
 
-        .right:hover {
-            width: 80%;
-        }
+ .info a {
+     margin: 10px;
+     padding: 10px 30px;
+     color: #fff;
+     font-size: 16px;
+     text-transform: uppercase;
+     border: 1px solid #fff;
+     transition: .4s;
+     text-decoration: none;
+     background-color: black;
+ }
 
-        .right:hover .info p {
-            display: block;
-        }
+ .info a:hover {
+     background-color: #fff;
+     color: #212121;
+ }
 
-        .right .filter {
-            background-color: #3f51b5;
-        }
+ .right {
+     position: relative;
+     width: 50%;
+     background-image: url(../img/parent.jpg);
+     background-size: cover;
+     background-position: center;
+     transition: .4s;
+     border-right: 4px solid #212121;
+ }
 
-        .left {
-            position: relative;
-            width: 50%;
-            background-image: url(../img/guest.jpg);
-            background-size: cover;
-            background-position: center;
-            transition: .4s;
-            border-left: 4px solid #212121;
-        }
+ .right:hover {
+     width: 80%;
+ }
 
-        .left:hover {
-            width: 80%;
-        }
+ .right:hover .info p {
+     display: block;
+ }
 
-        .left .filter {
-            background-color: #f44336;
-        }
+ .right .filter {
+     background-color: #3f51b5;
+ }
 
-        .section {
-            padding: 100px 20%;
-        }
+ .left {
+     position: relative;
+     width: 50%;
+     background-image: url(../img/guest.jpg);
+     background-size: cover;
+     background-position: center;
+     transition: .4s;
+     border-left: 4px solid #212121;
+ }
 
-        .section h1 {
-            text-align: center;
-            text-transform: uppercase;
-            margin: 10px 0;
-        }
+ .left:hover {
+     width: 80%;
+ }
 
-        .section p {
-            font-size: 1.2rem;
-            line-height: 2rem;
-        }
+ .left .filter {
+     background-color: #f44336;
+ }
 
-footer {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: 100%;
-}
+ .section {
+     padding: 100px 20%;
+ }
+
+ .section h1 {
+     text-align: center;
+     text-transform: uppercase;
+     margin: 10px 0;
+ }
+
+ .section p {
+     font-size: 1.2rem;
+     line-height: 2rem;
+ }
+
+ .open-button {
+
+     padding: 5px;
+     border: none;
+     cursor: pointer;
+     box-shadow: 0px 0px 22px 0px;
+     position: fixed;
+     bottom: 23px;
+     right: 20px;
+     transition: .5s;
+     width: 50px;
+     border-radius: 100%;
+ }
+
+ /* The popup form - hidden by default */
+ .form-popup {
+     display: none;
+     position: fixed;
+     bottom: 0;
+     right: 15px;
+     border: 3px solid #f1f1f1;
+     z-index: 9;
+     transition: 1s;
+    
+ }
+
+ /* Add styles to the form container */
+ .form-container {
+     width: 300px;
+     padding: 10px;
+     background-color: white;
+ }
+
+ /* Full-width input fields */
+ .form-container input[type=text],
+ .form-container input[type=password] {
+     width: 90%;
+     padding: 15px;
+     margin: 5px 0 22px 0;
+     border: none;
+     background: #f1f1f1;
+ } 
+
+textarea {
+     width: 90%;
+    height: 120px;
+     padding: 15px;
+     margin: 5px 0 22px 0;
+     border: none;
+     background: #f1f1f1;
+ }
+
+ /* When the inputs get focus, do something */
+ .form-container input[type=text]:focus,
+ .form-container input[type=password]:focus {
+     background-color: #ddd;
+     outline: none;
+ }
+
+ /* Set a style for the submit/login button */
+ .form-container .btn {
+     background-color: #4CAF50;
+     color: white;
+     padding: 16px 20px;
+     border: none;
+     cursor: pointer;
+     width: 49%;
+     margin-bottom: 10px;
+     opacity: 0.8;
+ }
+
+ /* Add a red background color to the cancel button */
+ .form-container .cancel {
+     background-color: red;
+ }
+
+ /* Add some hover effects to buttons */
+ .form-container .btn:hover,
+ .open-button:hover {
+     
+     transition: .5s;
+ }
+
+.open-button:hover {
+     
+     opacity: 1;
+     width:60px;
+     transition: .5s;
+    
+ }
+
+ footer {
+     position: absolute;
+     bottom: 10px;
+     left: 10px;
+     width: 100%;
+ }
