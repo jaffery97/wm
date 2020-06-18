@@ -40,13 +40,13 @@
 
 <div class="form-popup" id="myForm">
     
-  <form action="/action_page.php" class="form-container"><br>
+  <form action="send.php" method="post" class="form-container"><br>
       <p>Please let us know if there are any issues</p><br>
     <label for="Messages"><b>Messages</b></label><br>
-      <textarea placeholder="Your Messages" name="email" required></textarea>
+      <textarea placeholder="Your Messages" name="message" required></textarea>
       <br>
     <label for="email"><b>Email</b></label><br>
-    <input type="text" placeholder="Your email" name="psw" required>
+    <input type="text" placeholder="Your email" name="email" required>
       <br>
     <button type="submit" class="btn">Send</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>

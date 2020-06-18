@@ -109,7 +109,7 @@
  .open-button {
 
      padding: 5px;
-    
+
      cursor: pointer;
      box-shadow: 0px 0px 22px 0px;
      position: fixed;
@@ -129,7 +129,7 @@
      border: 3px solid #f1f1f1;
      z-index: 9;
      transition: 1s;
-    
+
  }
 
  /* Add styles to the form container */
@@ -147,11 +147,11 @@
      margin: 5px 0 22px 0;
      border: none;
      background: #f1f1f1;
- } 
+ }
 
-textarea {
+ textarea {
      width: 90%;
-    height: 120px;
+     height: 120px;
      padding: 15px;
      margin: 5px 0 22px 0;
      border: none;
@@ -167,7 +167,7 @@ textarea {
 
  /* Set a style for the submit/login button */
  .form-container .btn {
-     background-color: #4CAF50;
+     background-color: darkslateblue;
      color: white;
      padding: 16px 20px;
      border: none;
@@ -179,22 +179,22 @@ textarea {
 
  /* Add a red background color to the cancel button */
  .form-container .cancel {
-     background-color: red;
+     background-color: brown;
  }
 
  /* Add some hover effects to buttons */
  .form-container .btn:hover,
  .open-button:hover {
-     
+
      transition: .5s;
  }
 
-.open-button:hover {
-     
+ .open-button:hover {
+
      opacity: 1;
-     width:60px;
+     width: 60px;
      transition: .5s;
-    
+
  }
 
  footer {
