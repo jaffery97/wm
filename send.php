@@ -13,7 +13,7 @@ $message = $_POST['message'];
                 $to = "daarulhikmahny@gmail.com";
                 $subject = "WEB MEETING ISSUES|DHNY";
                 $title = "WEB MEETING ISSUES|DHNY";
-                $txt = message;
+                $txt = $message;
                 
                 $headers = "From: $email" . "\r\n" .
                 "CC: magfurhjafory1996@gmail.com";
@@ -22,9 +22,9 @@ $message = $_POST['message'];
 
 
 echo "<h1 style='text-align:center;'>Thank you</h1>";
-echo "<center> <a href='index.html'>Go to Main page</a> </center>";
+echo "<center> <a href='https://wm1-phi.vercel.app/'>Go to Main page</a> </center>";
 
-header('Location:index.html');
+header('Location:https://wm1-phi.vercel.app/');
 
 
 ?>
