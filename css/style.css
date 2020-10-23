@@ -31,6 +31,7 @@
      z-index: 5;
      transform: translate(-50%, -50%);
      color: #fff;
+     
 
  }
 
@@ -44,6 +45,8 @@
      transition: .4s;
      text-decoration: none;
      background-color: black;
+     box-shadow: 0px 0px 22px 0px white;
+     border-radius: 10px;
  }
 
  .info a:hover {
