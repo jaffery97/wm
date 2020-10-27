@@ -5,11 +5,16 @@
      font-family: sans-serif;
  }
 
+body {
+
+}
+
 
 
 
  .container {
      height: 70vh;
+     width: 100%;
      display: flex;
      flex-direction: row;
  }

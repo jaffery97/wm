@@ -6,12 +6,58 @@
     <title> WEB MEETING</title>
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
-
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
+    
+    <style>
+        
+        .header{
+            position: absolute;
+            top: 20vh;
+            width: 100%;
+        }
+    
+        .loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+    
+    </style>
 
 
 <body>
+    
+     <div class="header animated fadeOut delay-4s">
+
+<center>
+<h2>ٱلسَّلَامُ عَلَيْكُمْ</h2>
+<!--<h2>Loading.....</h2>-->
+
+<div class="loader"></div>
+    
+   
+
+</center>
+          
+    </div>
+    
+    <div class="animated fadeIn delay-4s">
     <h1 style="text-align: center; padding: 30px;"> WEB MEETING</h1>
     <div class="container">
 
@@ -68,11 +114,11 @@
     </div>
 -->
     <footer style="text-align: center;">
-    COPYRIGHT @ DHNY 2020
+    COPYRIGHT @ DHNY 2020 <br> Build by <a href="https://www.mhjafory.com" style="text-decoration: none; color: gray;">MH</a>
     </footer>
 
 
-
+    </div>
     <script>
 function openForm() {
   document.getElementById("myForm").style.cssText = "display: block;transition-duration: 1s;";
